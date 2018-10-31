@@ -1,0 +1,18 @@
+{% extends 'masterfile.html' %}
+
+{% block mybody %}
+
+<h1 style="text-align:center">Faculties of this College</h1>
+
+{% for faculty in sendFaculties %}
+<ul class="list-group col-sm-4" style="text-align:center;margin-left:364px;margin-top:35px">
+<li class="list-group-item" style="background-color:aliceblue"><b>{{faculty.name}}</b></li>
+<li class="list-group-item">{{faculty.dept}}</li>
+<li class="list-group-item">{{faculty.email}}</li>
+<li class="list-group-item">{{faculty.mob}}</li>
+</br>
+</ul>
+
+{% endfor %}
+
+{% endblock %}
